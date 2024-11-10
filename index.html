@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>❤️ - Te quiero Britney</title>
+
+  <!-- Incluir SweetAlert2 desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(to bottom, #ffe6e6, #fff0f5);
+    }
+
+    h1 {
+      font-family: Courier, sans-serif;
+      font-size: 2rem;
+      color: #383838;
+      text-align: center;
+      margin: 10px;
+    }
+
+    #content {
+      display: none;
+    }
+  </style>
+
+  <script>
+    window.onload = function () {
+      // Usar SweetAlert2 para mostrar el mensaje
+      Swal.fire({
+        title: 'Espero que te guste preciosa',
+        icon: 'success',
+        confirmButtonText: 'OK',
+        background: '#ffe6e6',
+        customClass: {
+          title: 'swal-title', // Estilo para el título
+          popup: 'swal-popup'  // Estilo para el popup
+        }
+      }).then((result) => {
+        // Si el usuario hace clic en "OK", mostrar el contenido
+        if (result.isConfirmed) {
+          document.getElementById('content').style.display = 'block';
+        }
+      });
+    };
+  </script>
+
+</head>
+
+<body>
+  <div id="content">
+    <h1>Para ti preciosa</h1>
+    <svg width="300" height="400" viewBox="0 0 300 400">
+      <!-- Tallo principal -->
+      <line x1="150" y1="200" x2="150" y2="370" stroke="#4f7942" stroke-width="8" />
+
+      <!-- Tallo y flores secundarias -->
+      <g>
+        <!-- Tallo 1 -->
+        <line x1="150" y1="250" x2="120" y2="180" stroke="#4f7942" stroke-width="5" />
+        <g transform="translate(120, 180)">
+          <circle cx="0" cy="0" r="6" fill="#ffddb3" />
+          <circle cx="0" cy="-15" r="12" fill="#ff6f91" />
+          <circle cx="12" cy="-3" r="12" fill="#ff6f91" />
+          <circle cx="-12" cy="-3" r="12" fill="#ff6f91" />
+          <circle cx="-8" cy="10" r="12" fill="#ff6f91" />
+          <circle cx="8" cy="10" r="12" fill="#ff6f91" />
+        </g>
+
+        <!-- Tallo 2 -->
+        <line x1="150" y1="220" x2="180" y2="160" stroke="#4f7942" stroke-width="5" />
+        <g transform="translate(180, 160)">
+          <circle cx="0" cy="0" r="6" fill="#ffddb3" />
+          <circle cx="0" cy="-15" r="12" fill="#ff9aa2" />
+          <circle cx="12" cy="-3" r="12" fill="#ff9aa2" />
+          <circle cx="-12" cy="-3" r="12" fill="#ff9aa2" />
+          <circle cx="-8" cy="10" r="12" fill="#ff9aa2" />
+          <circle cx="8" cy="10" r="12" fill="#ff9aa2" />
+        </g>
+
+        <!-- Tallo 3 -->
+        <line x1="150" y1="210" x2="110" y2="150" stroke="#4f7942" stroke-width="5" />
+        <g transform="translate(110, 150)">
+          <circle cx="0" cy="0" r="6" fill="#ffddb3" />
+          <circle cx="0" cy="-15" r="12" fill="#ffd1dc" />
+          <circle cx="12" cy="-3" r="12" fill="#ffd1dc" />
+          <circle cx="-12" cy="-3" r="12" fill="#ffd1dc" />
+          <circle cx="-8" cy="10" r="12" fill="#ffd1dc" />
+          <circle cx="8" cy="10" r="12" fill="#ffd1dc" />
+        </g>
+
+        <!-- Tallo 4 -->
+        <line x1="150" y1="230" x2="190" y2="140" stroke="#4f7942" stroke-width="5" />
+        <g transform="translate(190, 140)">
+          <circle cx="0" cy="0" r="6" fill="#ffddb3" />
+          <circle cx="0" cy="-15" r="12" fill="#ffb6c1" />
+          <circle cx="12" cy="-3" r="12" fill="#ffb6c1" />
+          <circle cx="-12" cy="-3" r="12" fill="#ffb6c1" />
+          <circle cx="-8" cy="10" r="12" fill="#ffb6c1" />
+          <circle cx="8" cy="10" r="12" fill="#ffb6c1" />
+        </g>
+      </g>
+
+      <!-- Hojas en el tallo principal -->
+      <ellipse cx="130" cy="300" rx="15" ry="30" fill="#4f7942" transform="rotate(-30 130 300)" />
+      <ellipse cx="170" cy="310" rx="15" ry="30" fill="#4f7942" transform="rotate(30 170 310)" />
+
+      <!-- Flor central más grande -->
+      <g transform="translate(150, 140)">
+        <circle cx="0" cy="0" r="8" fill="#ffddb3" />
+        <circle cx="0" cy="-20" r="18" fill="#ff6f91" />
+        <circle cx="18" cy="-5" r="18" fill="#ff6f91" />
+        <circle cx="-18" cy="-5" r="18" fill="#ff6f91" />
+        <circle cx="-13" cy="15" r="18" fill="#ff6f91" />
+        <circle cx="13" cy="15" r="18" fill="#ff6f91" />
+      </g>
+    </svg>
+  </div>
+</body>
+
+</html>
